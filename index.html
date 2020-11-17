@@ -1,0 +1,525 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Litten</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Litten">
+    <meta property="og:description" content="no, you can't get amonglock on android">
+    <meta property="og:url" content="https://litten.love">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+    <style>
+
+        html, body {
+
+            margin: 0;
+            padding: 0;
+            background-color: #FAFFED;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            user-select: none;
+            -webkit-user-select: none;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        /*
+
+            desktop layout
+
+        */
+
+        .desktopLayout .header .container ul {
+
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transform: translateY(25px);
+
+        }
+
+        .desktopLayout .header .container ul li {
+
+            display: inline;
+            list-style: none;
+            padding: 10px;
+            font-size: 20px;
+
+        }
+
+        .desktopLayout .header .container ul li a {
+
+            color: #707070;
+            transition: 250ms;
+
+        }
+
+        .desktopLayout .header .container ul li a:hover {
+            
+            text-shadow: 2px 2px rgba(112, 112, 112, 0.3);
+
+        }
+
+        .desktopLayout .content .container {
+
+            text-align: center;
+            height: 90%; 
+            width:100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .desktopLayout .content .container #contentDescription {
+
+            font-size: 30px;
+            font-family: 'Linotte';
+            color:#707070;
+            padding: 70px;
+            margin-left: -50px;
+
+        }
+
+        .desktopLayout .content .container #contentHeader {
+
+            font-size: 213px;
+            font-family: 'Sofye';
+            color:#707070;
+            line-height: 300px;
+
+        }
+
+        .desktopLayout .content .container img {
+
+            height: 450px;
+            width: auto;
+            border-radius: 225px;
+            border: 4px solid #E9EDE2;
+            transform: translateY(40px);
+
+        }
+
+        /*
+
+            mobile layout
+
+        */
+
+        .mobileLayout {
+
+            display: none;
+
+        }
+
+        .mobileLayout .header .container ul {
+
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transform: translateY(25px);
+
+        }
+
+        .mobileLayout .header .container ul li {
+
+            display: inline;
+            list-style: none;
+            padding: 10px;
+            font-size: 20px;
+
+        }
+
+        .mobileLayout .header .container ul li a {
+
+            color: #707070;
+            transition: 250ms;
+
+        }
+
+        .mobileLayout .header .container ul li a:hover {
+
+            text-shadow: 2px 2px rgba(112, 112, 112, 0.3);
+
+        }
+
+        .mobileLayout .content .container img {
+
+            height: 300px;
+            width: auto;
+            border-radius: 225px;
+            border: 4px solid #E9EDE2;
+            transform: translateY(80px);
+
+        }
+
+        .mobileLayout .content .container {
+
+            text-align: center;
+
+        }
+
+        .mobileLayout .content .container #contentDescription {
+
+            font-size: 26px;
+            font-family: 'Linotte';
+            color:#707070;
+            padding: 70px;
+            transform: translateY(-70px);
+
+        }
+
+        .mobileLayout .content .container #contentHeader {
+
+            font-size: 160px;
+            font-family: 'Sofye';
+            color:#707070;
+            line-height: 300px;
+
+        }
+
+        @media only screen and (max-width: 1600px) {
+
+            .desktopLayout .content .container #contentDescription {
+
+                font-size: 26px;
+                font-family: 'Linotte';
+                color:#707070;
+                padding: 70px;
+
+            }
+
+            .desktopLayout .content .container #contentHeader {
+
+                font-size: 190px;
+                font-family: 'Sofye';
+                color:#707070;
+                line-height: 300px;
+
+            }
+
+            .desktopLayout .content .container img {
+
+                height: 400px;
+                width: auto;
+                border-radius: 225px;
+                border: 4px solid #E9EDE2;
+                transform: translateY(40px);
+
+            }
+
+        }
+
+        @media only screen and (max-width: 1112px) {
+
+            .desktopLayout .content .container #contentDescription {
+
+                font-size: 24px;
+                font-family: 'Linotte';
+                color:#707070;
+                padding: 50px;
+
+            }
+
+            .desktopLayout .content .container #contentHeader {
+
+                font-size: 180px;
+                font-family: 'Sofye';
+                color:#707070;
+                line-height: 300px;
+
+            }
+
+            .desktopLayout .content .container img {
+
+                height: 350px;
+                width: auto;
+                border-radius: 225px;
+                border: 4px solid #E9EDE2;
+                transform: translateY(40px);
+
+            }
+
+        }
+
+        @media only screen and (max-width: 1024px) {
+
+            .desktopLayout .content .container #contentDescription {
+
+                font-size: 23px;
+                font-family: 'Linotte';
+                color:#707070;
+                padding: 50px;
+
+            }
+
+            .desktopLayout .content .container #contentHeader {
+
+                font-size: 160px;
+                font-family: 'Sofye';
+                color:#707070;
+                line-height: 250px;
+
+            }
+
+            .desktopLayout .content .container img {
+
+                height: 330px;
+                width: auto;
+                border-radius: 225px;
+                border: 4px solid #E9EDE2;
+                transform: translateY(40px);
+
+            }
+
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            .desktopLayout .content .container #contentDescription {
+
+                font-size: 17px;
+                font-family: 'Linotte';
+                color:#707070;
+                padding: 40px;
+
+            }
+
+            .desktopLayout .content .container #contentHeader {
+
+                font-size: 140px;
+                font-family: 'Sofye';
+                color:#707070;
+                line-height: 200px;
+
+            }
+
+            .desktopLayout .content .container img {
+
+                height: 250px;
+                width: auto;
+                border-radius: 225px;
+                border: 4px solid #E9EDE2;
+                transform: translateY(40px);
+
+            }
+
+        }
+
+        @media only screen and (max-width: 414px) {
+
+            .desktopLayout {
+
+                display: none;
+                    
+            }
+
+            .mobileLayout {
+
+                display: block;
+
+            }
+
+            .mobileLayout .header .container ul li {
+
+                display: inline;
+                list-style: none;
+                padding: 10px;
+                font-size: 22px;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 375px) {
+
+            .desktopLayout {
+
+                display: none;
+                    
+            }
+
+            .mobileLayout {
+
+                display: block;
+
+            }
+
+            .mobileLayout .content .container img {
+
+                height: 280px;
+                width: auto;
+                border-radius: 225px;
+                border: 4px solid #E9EDE2;
+                transform: translateY(80px);
+
+            }
+
+            .mobileLayout .content .container #contentDescription {
+
+                font-size: 25px;
+                font-family: 'Linotte';
+                color:#707070;
+                padding: 60px;
+                transform: translateY(-20px);
+
+            }
+
+            .mobileLayout .content .container #contentHeader {
+
+                font-size: 150px;
+                font-family: 'Sofye';
+                color:#707070;
+                line-height: 250px;
+
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+
+            .desktopLayout {
+
+                display: none;
+                    
+            }
+
+            .mobileLayout {
+
+                display: block;
+
+            }
+
+            .mobileLayout .header .container ul li {
+
+                display: inline;
+                list-style: none;
+                padding: 10px;
+                font-size: 18px;
+
+            }
+
+            .mobileLayout .content .container img {
+
+                height: 220px;
+                width: auto;
+                border-radius: 225px;
+                border: 4px solid #E9EDE2;
+                transform: translateY(80px);
+
+            }
+
+            .mobileLayout .content .container #contentDescription {
+
+                font-size: 22px;
+                font-family: 'Linotte';
+                color:#707070;
+                padding: 50px;
+                transform: translateY(-20px);
+
+            }
+
+                .mobileLayout .content .container #contentHeader {
+
+                    font-size: 120px;
+                    font-family: 'Sofye';
+                    color:#707070;
+                    line-height: 200px;
+
+                }
+
+            }
+
+        @font-face {
+            font-family: 'Sofye';
+            src: url("assets/SofyeDemo-Ezrz.ttf");
+        }
+
+        @font-face {
+            font-family: 'Linotte';
+            src: url("assets/Linotte\ Light.otf");
+        }
+
+    </style>
+
+<body>
+
+    <div class="desktopLayout">
+
+        <div class="header">
+            <div class="container">
+    
+                <ul>
+                    <li><a href="https://twitter.com/intent/follow?screen_name=litteeen"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.reddit.com/user/strawberryLitten"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="https://github.com/Litteeen"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://discord.gg/fPHN8KG"><i class="fab fa-discord"></i></a></li>
+                    <li><a href="mailto:hiya@litten.love"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://repo.litten.love/"><i class="fas fa-box-open"></i></a></li>
+                </ul>
+    
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="container">
+    
+                <p id="contentDescription"><span id="contentHeader">Litten</span><br>
+                Hiya, most people likely know me as a tweak developer<br>
+                for iOS devices in the Jailbreak community who ❤️ to<br>
+                contribute to free and open source jailbreak software;<br>
+                I’m also a big 🐈, 🐬, 🎼 & 🌸 lover and enjoy spending my<br>
+                time 🎨 or learning new 🇫🇷🇺🇸🇩🇪; Fan of ‘choices matter’<br>
+                games like OXENFREE and Life is Strange, but also<br>
+                Firewatch and Disney Epic Mickey</p>
+    
+                <img src="assets/avatar.jpeg" draggable="false">
+    
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mobileLayout">
+
+        <div class="header">
+            <div class="container">
+    
+                <ul>
+                    <li><a href="https://twitter.com/intent/follow?screen_name=litteeen"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.reddit.com/user/strawberryLitten"><i class="fab fa-reddit-alien"></i></a></li>
+                    <li><a href="https://github.com/Litteeen"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://discord.gg/fPHN8KG"><i class="fab fa-discord"></i></a></li>
+                    <li><a href="mailto:hiya@litten.love"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://repo.litten.love/"><i class="fas fa-box-open"></i></a></li>
+                </ul>
+    
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="container">
+
+                <img src="assets/avatar.jpeg" draggable="false">
+    
+                <p id="contentDescription"><span id="contentHeader">Litten</span><br>
+                Hiya, most people likely know me as a tweak developer
+                for iOS devices in the Jailbreak community who ❤️ to
+                contribute to free and open source jailbreak software;
+                I’m also a big 🐈, 🐬, 🎼 & 🌸 lover and enjoy spending my
+                time 🎨 or learning new 🇫🇷🇺🇸🇩🇪; Fan of ‘choices matter’
+                games like OXENFREE and Life is Strange, but also
+                Firewatch and Disney Epic Mickey</p>
+    
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
